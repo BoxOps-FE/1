@@ -122,6 +122,49 @@
 
             <!-- Link to Data Sheet Table Page -->
             <p><a href="observations.html">More Observations: From The Ground Up Data Sheet Table</a></p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="distanceChart" width="800" height="400"></canvas>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('distanceChart').getContext('2d');
+
+        // Data for the chart
+        const observerHeights = [0.25, 1.5, 23, 50, 75]; // Observer Heights in Feet
+        const distances = [13.8, 31.82, 63.2, 80, 300]; // Distances in Miles
+
+        // Create the chart
+        const distanceChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: distances.map(d => `${d} miles`),
+                datasets: [{
+                    label: 'Observer Heights (feet)',
+                    data: observerHeights,
+                    fill: false,
+                    borderColor: 'rgba(255, 99, 132, 1)', // Red color for the line
+                    tension: 0.1 // Smoothening the line
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Observer Heights (feet)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Distances (miles)'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
         </section>
         
         <section class="science-section">
