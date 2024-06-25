@@ -97,21 +97,21 @@
 </head>
 <body>
     <div class="content">
-<header style="padding: 20px; text-align: center;">
-    <h1 style="font-size: 3.6em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; color: #00ff00; text-shadow: 0 0 10px #00ff00;">
-        BoxOps
-    </h1>
-    <p style="font-size: 1.5em; line-height: 1.6; text-transform: uppercase; color: #00ff00; text-shadow: 0 0 10px #00ff00;">
-        Hub for FE geometry, science, observations, citations and data points.
-    </p>
-</header>
+        <header style="padding: 20px; text-align: center;">
+            <h1 style="font-size: 3.6em; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; color: #00ff00; text-shadow: 0 0 5px #00ff00;">
+                BoxOps
+            </h1>
+            <p style="font-size: 1.5em; line-height: 1.6; text-transform: uppercase; color: #00ff00; text-shadow: 0 0 5px #00ff00;">
+                Hub for FE geometry, science, observations, citations and data points.
+            </p>
+        </header>
         
         <section class="geometry-section">
             <h2>Geometry</h2>
             <div class="observation">
                 <h3>New Black Swan Observation</h3>
                 <p>Citation: bmlsb69 yt <a href="https://youtu.be/WXNjki9ohWA?si=LNLhBavPdiDrsWcJ">https://youtu.be/WXNjki9ohWA?si=LNLhBavPdiDrsWcJ</a></p>
-                <p>Data Point: 1.5 Observer Height, 31.82 mile horizon, 613 FT missing curve of 85 FT island, horizon 2000% beyond globe geometric limitation of 1.5 miles, requires a globe radius of 1.8 MILLION!</p>
+                <p>Data Point: 1.5 FT Observer Height, 31.82 mile horizon, 613 FT missing curve of 85 FT island, horizon 2000% beyond globe geometric limitation of 1.5 miles, requires a globe radius of 1.8 MILLION!</p>
                 <img src="blackswan new.webp" alt="31_82_miles_1_5_foot_observer_height_black_swan_meme_boxops_11_1_2021.jpeg">
                 <img src="https://media.giphy.com/media/j8j9lHYzIDKgNm4J5K/giphy.gif" alt="GIF Example">
             </div>
@@ -125,8 +125,31 @@
             </div>
 
             <!-- Link to Data Sheet Table Page -->
-            <p><a href="observations.html">More Observations: From The Ground Up Data Sheet Table</a></p>
-
+            <p style="font-size: 1.3em;">
+                <a href="observations.html" style="color: #ffd500; /* yellow */
+                                                  text-decoration: underline; 
+                                                  font-family: 'Courier New', Courier, monospace; 
+                                                  text-shadow: 0 0 5px #000000, 0 0 10px #ff00ff, 0 0 15px #ff00ff; 
+                                                  transition: color 0.3s ease-in-out;">
+                    More Observations: From The Ground Up Data Sheet Table
+                </a>
+            </p>
+            
+            <style>
+                a:hover {
+                    color: #00ff00; /* Neon green on hover */
+                    text-shadow: 0 0 5px #000000, 0 0 10px #00ff00, 0 0 15px #00ff00;
+                }
+            </style>
+            
+            
+            <style>
+                a:hover {
+                    color: #00ffff; /* Neon cyan on hover */
+                    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+                }
+            </style>
+            
             <!-- Chart Canvas -->
             <canvas id="distanceChart" width="800" height="400"></canvas>
         </section>
@@ -197,7 +220,7 @@
                     labels: distances.map(d => `${d} miles`),
                     datasets: [
                         {
-                            label: 'Observer Heights (feet)',
+                            label: 'Saw from Observer Height (feet)',
                             data: observerHeights,
                             fill: false,
                             borderColor: 'rgba(255, 99, 132, 1)', // Red color for the observer heights line
