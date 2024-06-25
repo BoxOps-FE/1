@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sheet: From The Ground Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #0f0;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        td {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Data Sheet</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Observation</th>
+                <th>Distance</th>
+                <th>Observer Height</th>
+                <th>Target Height</th>
+                <th>Globe Predicted Horizon Distance</th>
+                <th>Globe Predicted Hidden by Horizon</th>
+                <th>Relevant Axis Mismatch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pine Island to Billy Steels Beacon Light</td>
+                <td>7.5 miles (12.1 km)</td>
+                <td>4 inches (0.10 m)</td>
+                <td>12 feet (3.7 m)</td>
+                <td>.7 miles (1.1 km)</td>
+                <td>30.8 feet (9.4 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Helsinki</td>
+                <td>6 miles (9.7 km)</td>
+                <td>4 inches (100 mm)</td>
+                <td>10 feet (3.0 m)</td>
+                <td>.7 miles (1.1 km)</td>
+                <td>19 feet (5.8 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Anchors Home to Barrow in Furness II</td>
+                <td>20.4 miles (32.8 km)</td>
+                <td>1 inch (25 mm)</td>
+                <td>20 feet (6.1 m)</td>
+                <td>.35 miles (0.56 km)</td>
+                <td>268 feet (82 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Ice Swan - Rock Lake Manitoba (Frozen)</td>
+                <td>Simultaneously - 5 miles (8.0 km) , 6 miles (9.7 km) , 7 miles (11 km) , 8 miles (13 km)</td>
+                <td>.5 feet (0.15 m)</td>
+                <td>1.5 feet (0.46 m)</td>
+                <td>0.866 miles (1.394 km)</td>
+                <td>Simultaneously - 11.4 feet (3.5 m) , 17.6 feet (5.4 m) , 25.1 feet (7.7 m) , 33.9 feet (10.3 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Worthing To Brighton</td>
+                <td>15.4 kilometres (9.6 mi)</td>
+                <td>0.1 metres (0.33 ft)</td>
+                <td>12.2 metres (40 ft)</td>
+                <td>1.1 kilometres (0.68 mi)</td>
+                <td>16 metres (52 ft)</td>
+                <td>Y-Axis</td>
+            </tr>
+            <tr>
+                <td>Black Swan</td>
+                <td>Greater than 9.34 miles (15.03 km)</td>
+                <td>1 foot (0.30 m)</td>
+                <td>Not Applicable</td>
+                <td>1.2 miles (1.9 km)</td>
+                <td>Not Applicable</td>
+                <td>Z-axis ONLY!</td>
+            </tr>
+            <tr>
+                <td>Port Washington Power Plant to Elm Road Power Plant</td>
+                <td>37 miles (60 km)</td>
+                <td>2 feet (0.61 m)</td>
+                <td>550 feet (170 m)</td>
+                <td>1.7 miles (2.7 km)</td>
+                <td>829 feet (253 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Anchors Home to Barrow in Furness</td>
+                <td>18.4 miles (29.6 km)</td>
+                <td>2 feet (0.61 m)</td>
+                <td>20 feet (6.1 m)</td>
+                <td>1.7 miles (2.7 km)</td>
+                <td>185 feet (56 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Atwater Park to Edgewater generating station</td>
+                <td>44 miles (71 km)</td>
+                <td>2 feet (0.61 m)</td>
+                <td>555 feet (169 m)</td>
+                <td>1.7 miles (2.7 km)</td>
+                <td>1,191 feet (363 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Pine Island to Cutter Rock</td>
+                <td>11.2 miles (18.0 km)</td>
+                <td>2.5 feet (0.76 m)</td>
+                <td>Estimated 12 feet (3.7 m)</td>
+                <td>1.9 miles (3.1 km)</td>
+                <td>57.4 feet (17.5 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Itälahti Lauttasaari to Gråhara Lighthouse</td>
+                <td>4.3 miles (6.9 km)</td>
+                <td>30 centimetres (12 in)</td>
+                <td>15 metres (49 ft)</td>
+                <td>1.21 miles (1.95 km)</td>
+                <td>4.7 metres (15 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <!-- Insert more rows for each observation -->
+            <tbody>
+                <!-- Existing rows -->
+                <tr>
+                    <td>Pine Island to Billy Steels Beacon Light</td>
+                    <td>7.5 miles (12.1 km)</td>
+                    <td>4 inches (0.10 m)</td>
+                    <td>12 feet (3.7 m)</td>
+                    <td>.7 miles (1.1 km)</td>
+                    <td>30.8 feet (9.4 m)</td>
+                    <td>Y-axis & Z-axis</td>
+                </tr>
+                <tr>
+                    <td>Helsinki</td>
+                    <td>6 miles (9.7 km)</td>
+                    <td>4 inches (100 mm)</td>
+                    <td>10 feet (3.0 m)</td>
+                    <td>.7 miles (1.1 km)</td>
+                    <td>19 feet (5.8 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <!-- New rows to be added here -->
+                <tr>
+                    <td>Playa de Santiago to Paquita Parez Fishing boat</td>
+                    <td>4.7 miles (7.6 km)</td>
+                    <td>1 foot (0.30 m)</td>
+                    <td>Not Applicable</td>
+                    <td>1.22 miles (1.96 km)</td>
+                    <td>Not Applicable</td>
+                    <td>Z-axis ONLY</td>
+                </tr>
+                <tr>
+                    <td>Lake Winnipeg Water Tower</td>
+                    <td>16.69 miles (26.86 km)</td>
+                    <td>10.5 inches (270 mm)</td>
+                    <td>140 feet (43 m)</td>
+                    <td>1.67 miles (2.69 km)</td>
+                    <td>150 feet (46 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Wanapum Dam</td>
+                    <td>7.6 miles (12.2 km)</td>
+                    <td>27 inches (690 mm)</td>
+                    <td>20 feet (6.1 m) estimated</td>
+                    <td>1.87 miles (3.01 km)</td>
+                    <td>5 feet (1.5 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Small Pond Horizon Test</td>
+                    <td>600 feet (180 m)</td>
+                    <td>1.5 inches (38 mm)</td>
+                    <td>8 inches (200 mm)</td>
+                    <td>2,286 feet (697 m)</td>
+                    <td>21 millimetres (0.83 in)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Lake Tahoe</td>
+                    <td>18 miles (29 km)</td>
+                    <td>3 feet (0.91 m)</td>
+                    <td>234 feet (71 m)</td>
+                    <td>2.1 miles (3.4 km)</td>
+                    <td>168 feet (51 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Miramar Beach to Anacapa</td>
+                    <td>31.63 miles (50.90 km)</td>
+                    <td>3 feet (0.91 m)</td>
+                    <td>930 feet (280 m)</td>
+                    <td>2.1 miles (3.4 km)</td>
+                    <td>580.7 feet (177.0 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Worthing to Beachy Head Cliffs and Lighthouse</td>
+                    <td>27.1 miles (43.6 km)</td>
+                    <td>4 feet (1.2 m)</td>
+                    <td>141 feet (43 m)</td>
+                    <td>2.4 miles (3.9 km)</td>
+                    <td>405 feet (123 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Sheridan Park to Bradford Beach</td>
+                    <td>7 miles (11 km)</td>
+                    <td>3 feet (0.91 m)</td>
+                    <td>20 feet (6.1 m)</td>
+                    <td>2.12 miles (3.41 km)</td>
+                    <td>15.87 feet (4.84 m)</td>
+                    <td>Y-axis & Z-axis</td>
+                </tr>
+                <tr>
+                    <td>The Lhen Beach to The Mull of Galloway Lighthouse</td>
+                    <td>22.6 miles (36.4 km)</td>
+                    <td>6 feet (1.8 m)</td>
+                    <td>325 feet (99 m)</td>
+                    <td>3 miles (4.8 km)</td>
+                    <td>256 feet (78 m)</td>
+                    <td>Y-axis</td>
+                </tr>
+                <tr>
+                    <td>Point Aux Herbes to Fort Pike Bridge</td>
+                    <td>7 miles (11 km)</td>
+                    <td>6 feet (1.8 m)</td>
+                    <td>10 feet (3.0 m)</td>
+                    <td>3 miles (4.8 km)</td>
+                    <td>10.7 feet (3.3 m)</td>
+                    <td>Y-axis & Z-axis</td>
+                </tr>
+                <!-- Insert more rows for each observation -->
+            </tr>
+            <tr>
+                <td>Key Biscayne to Cape Florida Lighthouse</td>
+                <td>13.75 miles (22.13 km)</td>
+                <td>6 feet (1.8 m)</td>
+                <td>95 feet (29 m)</td>
+                <td>3 miles (4.8 km)</td>
+                <td>77.1 feet (23.5 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Fort Niagara to Toronto</td>
+                <td>30.8 miles (49.6 km)</td>
+                <td>6 feet (1.8 m)</td>
+                <td>306 feet (93 m)</td>
+                <td>3 miles (4.8 km)</td>
+                <td>515 feet (157 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Lake McConaughey to Lake McConaughey Dam</td>
+                <td>14 miles (23 km)</td>
+                <td>8 feet (2.4 m)</td>
+                <td>24 feet (7.3 m)</td>
+                <td>3.4 miles (5.5 km)</td>
+                <td>74 feet (23 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Glencoe Pier to Waukegan NRG Power Station</td>
+                <td>17.2 miles (27.7 km)</td>
+                <td>8 feet (2.4 m)</td>
+                <td>Estimated 118 feet (36 m)</td>
+                <td>3.4 miles (5.5 km)</td>
+                <td>125 feet (38 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Dover From Calais</td>
+                <td>24 miles (39 km)</td>
+                <td>Estimated 12 feet (3.7 m)</td>
+                <td>350 feet (110 m)</td>
+                <td>4.2 miles (6.8 km)</td>
+                <td>260 feet (79 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Selsey To Brighton at Night</td>
+                <td>45.5 kilometres (28.3 mi)</td>
+                <td>1.5 metres (4.9 ft)</td>
+                <td>162 metres (531 ft)</td>
+                <td>4.3 kilometres (2.7 mi)</td>
+                <td>132.7 metres (435 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Selsey To Brighton</td>
+                <td>45.5 kilometres (28.3 mi)</td>
+                <td>1.5 metres (4.9 ft)</td>
+                <td>162 metres (531 ft)</td>
+                <td>4.3 kilometres (2.7 mi)</td>
+                <td>132.7 metres (435 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Marineland to Anastasia Park</td>
+                <td>13.2 miles (21.2 km)</td>
+                <td>15 feet (4.6 m)</td>
+                <td>15 feet (4.6 m)</td>
+                <td>4.7 miles (7.6 km)</td>
+                <td>47.7 feet (14.5 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Blackpool Tower from 4 locations</td>
+                <td>18 miles (29 km) , 28 miles (45 km) , 30.2 miles (48.6 km) , 33.6 miles (54.1 km)</td>
+                <td>15 feet (4.6 m) , 30 feet (9.1 m) , 20 feet (6.1 m) , 15 feet (4.6 m)</td>
+                <td>Tower 550 feet (170 m) Roller Coaster 235 feet (72 m)</td>
+                <td>4.7 miles (7.6 km) , 6.7 miles (10.8 km) , 5.4 miles (8.7 km) , 4.7 miles (7.6 km)</td>
+                <td>117.2 feet (35.7 m) , 302 feet (92 m) , 407 feet (124 m) , 555 feet (169 m)</td>
+                <td>Y-Axis</td>
+            </tr>
+            <tr>
+                <td>Ryde Seafront and Pier from Selsey</td>
+                <td>26 kilometres (16 mi)</td>
+                <td>15 metres (49 ft)</td>
+                <td>48 metres (157 ft)</td>
+                <td>4.37 kilometres (2.72 mi)</td>
+                <td>36.3 metres (119 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Prestatyn to Black Combe</td>
+                <td>63.2 miles (101.7 km)</td>
+                <td>23 feet (7.0 m)</td>
+                <td>1,970 feet (600 m)</td>
+                <td>5.87 miles (9.45 km)</td>
+                <td>2,191 feet (668 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Oceanside Pier to Catalina Island</td>
+                <td>61 miles (98 km)</td>
+                <td>30 feet (9.1 m)</td>
+                <td>2,097 feet (639 m)</td>
+                <td>6.7 miles (10.8 km)</td>
+                <td>1,965 feet (599 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Cape Arago Cape to Blanco Light House</td>
+                <td>34 miles (55 km)</td>
+                <td>30 feet (9.1 m)</td>
+                <td>256 feet (78 m)</td>
+                <td>6.7 miles (10.8 km)</td>
+                <td>496 feet (151 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Start Point Lighthouse</td>
+                <td>46 miles (74 km)</td>
+                <td>34 feet (10 m)</td>
+                <td>204 feet (62 m) estimated</td>
+                <td>7.14 miles (11.49 km)</td>
+                <td>1,006 feet (307 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Chicago Skyline</td>
+                <td>53 miles (85 km)</td>
+                <td>Estimate MAX 223 feet (68 m)</td>
+                <td>1,453 feet (443 m)</td>
+                <td>8.2 miles (13.2 km)</td>
+                <td>804 feet (245 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Southport to The Isle of Man</td>
+                <td>72 miles (116 km)</td>
+                <td>45 feet (14 m)</td>
+                <td>2,037 feet (621 m)</td>
+                <td>8.2 miles (13.2 km)</td>
+                <td>2,713 feet (827 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Milwaukee Wisconsin From Muskeegan Michigan</td>
+                <td>80 miles (130 km)</td>
+                <td>Estimated 50 feet (15 m)</td>
+                <td>650 feet (200 m)</td>
+                <td>8.6 miles (13.8 km)</td>
+                <td>3,394 feet (1,034 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Mille Lacs Lake to Mille Lacs Lake</td>
+                <td>16.6 miles (26.7 km)</td>
+                <td>Estimated 50 feet (15 m)</td>
+                <td>Estimated 50 feet (15 m)</td>
+                <td>8.6 miles (13.8 km)</td>
+                <td>42 feet (13 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Charra SA to Lounds Island</td>
+                <td>29.6 kilometres (18.4 mi)</td>
+                <td>7.5 metres (25 ft)</td>
+                <td>12 metres (39 ft)</td>
+                <td>10 kilometres (6.2 mi)</td>
+                <td>30 metres (98 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Windpoint lighthouse to Bayview</td>
+                <td>70 miles (110 km)</td>
+                <td>20 feet (6.1 m)</td>
+                <td>108 feet (33 m)</td>
+                <td>10.2 miles (16.4 km)</td>
+                <td>68 feet (21 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Southern Ocean Sea level to Mountains at 300 miles</td>
+                <td>300 miles (480 km)</td>
+                <td>Estimated 75 feet (23 m)</td>
+                <td>27,000 feet (8,200 m)</td>
+                <td>10.6 miles (17.1 km)</td>
+                <td>55,971.6 feet (17,060.1 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Albufeira to Praia de Faro Tower</td>
+                <td>22.9 kilometres (14.2 mi)</td>
+                <td>9.8 metres (32 ft)</td>
+                <td>19 metres (62 ft)</td>
+                <td>11.1 kilometres (6.9 mi)</td>
+                <td>10.8 metres (35 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Cape Bolton NK to Mount Chōkai Jp</td>
+                <td>897 kilometres (557 mi)</td>
+                <td>10 metres (33 ft)</td>
+                <td>7,130 metres (23,390 ft)</td>
+                <td>11.2 kilometres (7.0 mi)</td>
+                <td>62,062 metres (203,615 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Alma NB to Isle Haute NS</td>
+                <td>24 miles (39 km)</td>
+                <td>84 feet (26 m)</td>
+                <td>30 feet (9.1 m)</td>
+                <td>11.2 miles (18.0 km)</td>
+                <td>108 feet (33 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Dennis Beach to Gullivers Cove</td>
+                <td>56 miles (90 km)</td>
+                <td>84 feet (26 m)</td>
+                <td>Estimated 660 feet (200 m)</td>
+                <td>11.2 miles (18.0 km)</td>
+                <td>1,337 feet (408 m)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Liverpool to the Isle of Man</td>
+                <td>84.4 miles (135.8 km)</td>
+                <td>218 feet (66 m)</td>
+                <td>2,037 feet (621 m)</td>
+                <td>16 miles (26 km)</td>
+                <td>2,932 feet (894 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Liverpool to Anglesey</td>
+                <td>52.5 miles (84.5 km)</td>
+                <td>242 feet (74 m)</td>
+                <td>720 feet (220 m)</td>
+                <td>19 miles (31 km)</td>
+                <td>746 feet (227 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Minehead to Second Severn Bridge</td>
+                <td>41.8 miles (67.3 km)</td>
+                <td>256 feet (78 m)</td>
+                <td>449 feet (137 m)</td>
+                <td>19.5 miles (31.4 km)</td>
+                <td>330 feet (100 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>La Gomera to Sail Boat</td>
+                <td>43 kilometres (27 mi)</td>
+                <td>32 metres (105 ft)</td>
+                <td>Estimated 25 feet (7.6 m)</td>
+                <td>21.1 kilometres (13.1 mi)</td>
+                <td>37.5 metres (123 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Barcelona to Mallorca</td>
+                <td>112 miles (180 km)</td>
+                <td>703 feet (214 m)</td>
+                <td>4,305 feet (1,312 m)</td>
+                <td>32.4 miles (52.1 km)</td>
+                <td>4,218 feet (1,286 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Beacon Fell to Isle of Mann</td>
+                <td>86 miles (138 km)</td>
+                <td>864 feet (263 m)</td>
+                <td>2,037 feet (621 m)</td>
+                <td>36 miles (58 km)</td>
+                <td>1,667 feet (508 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Beacon Fell to Isle of Mann II</td>
+                <td>86 miles (138 km)</td>
+                <td>864 feet (263 m)</td>
+                <td>2,037 feet (621 m)</td>
+                <td>36 miles (58 km)</td>
+                <td>1,667 feet (508 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Burnt Mt. to Mt. McLoughlin</td>
+                <td>95 miles (153 km)</td>
+                <td>1,960 feet (600 m)</td>
+                <td>9,495 feet (2,894 m)</td>
+                <td>54.2 miles (87.2 km)</td>
+                <td>1,109 feet (338 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Puig Sallfort to Giraglia Lighthouse</td>
+                <td>325 miles (523 km)</td>
+                <td>3,211 feet (979 m)</td>
+                <td>279 feet (85 m)</td>
+                <td>69.4 miles (111.7 km)</td>
+                <td>43,680 feet (13,310 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Puig de Sallafort to Paglia Orba</td>
+                <td>297 miles (478 km)</td>
+                <td>3,219 feet (981 m)</td>
+                <td>8,284 feet (2,525 m)</td>
+                <td>69.48 miles (111.82 km)</td>
+                <td>26,284 feet (8,011 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Mallorca to Sant Jeroni</td>
+                <td>212 kilometres (132 mi)</td>
+                <td>1,002 metres (3,287 ft)</td>
+                <td>1,236 metres (4,055 ft)</td>
+                <td>70.2 kilometres (43.6 mi)</td>
+                <td>769 metres (2,523 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Mallorca to Tossal de la Muga</td>
+                <td>307 kilometres (191 mi)</td>
+                <td>1,002 metres (3,287 ft)</td>
+                <td>2,859 metres (9,380 ft)</td>
+                <td>70.2 kilometres (43.6 mi)</td>
+                <td>2,955 metres (9,695 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Penyagolosa to Puig Major</td>
+                <td>272 kilometres (169 mi)</td>
+                <td>1,813 metres (5,948 ft)</td>
+                <td>1,436 metres (4,711 ft)</td>
+                <td>94.4 kilometres (58.7 mi)</td>
+                <td>1,130 metres (3,710 ft)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Pic Noufonts to Tete de Estrop</td>
+                <td>252 miles (406 km)</td>
+                <td>9,354 feet (2,851 m)</td>
+                <td>9,715 feet (2,961 m) estimated</td>
+                <td>118 miles (190 km)</td>
+                <td>12,065 feet (3,677 m)</td>
+                <td>Y-axis</td>
+            </tr>
+            <tr>
+                <td>Canigou to Le Meije</td>
+                <td>435 kilometres (270 mi)</td>
+                <td>2,785 metres (9,137 ft)</td>
+                <td>3,982 metres (13,064 ft)</td>
+                <td>188 kilometres (117 mi)</td>
+                <td>2,777.2 metres (9,112 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Finestrelles Pyrenees to Pic Gaspard</td>
+                <td>443 kilometres (275 mi)</td>
+                <td>2,826 metres (9,272 ft)</td>
+                <td>3,883 metres (12,740 ft)</td>
+                <td>188.3 kilometres (117.0 mi)</td>
+                <td>5,096 metres (16,719 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            <tr>
+                <td>Canigó Pyrenees to Barre des Écrins Alps</td>
+                <td>412 kilometres (256 mi)</td>
+                <td>2,785 metres (9,137 ft)</td>
+                <td>4,102 metres (13,458 ft)</td>
+                <td>189.7 kilometres (117.9 mi)</td>
+                <td>3,882 metres (12,736 ft)</td>
+                <td>Y-axis & Z-axis</td>
+            </tr>
+            </tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
+<h2>Infrared light</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Observation</th>
+            <th>Distance</th>
+            <th>Observer Height</th>
+            <th>Target Height</th>
+            <th>Globe Predicted Horizon Distance</th>
+            <th>Globe Predicted Hidden by Horizon</th>
+            <th>Relevant Axis Mismatch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Wales to the Lake District</td>
+            <td>187 miles (301 km)</td>
+            <td>127 feet (39 m)</td>
+            <td>2,864 feet (873 m)</td>
+            <td>13.8 miles (22.2 km)</td>
+            <td>3,573 feet (1,089 m)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Perth Hills to Rottnest Island</td>
+            <td>32.2 miles (51.8 km)</td>
+            <td>782.4 feet (238.5 m)</td>
+            <td>264 feet (80 m)</td>
+            <td>34.2 miles (55.0 km)</td>
+            <td>2.8 feet (0.85 m)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Colorado Rocky Mountains from Commercial Flight</td>
+            <td>504 miles (811 km)</td>
+            <td>27,000 feet (8,200 m)</td>
+            <td>10,000 feet (3,000 m)-20,000 feet (6,100 m)</td>
+            <td>201.2 miles (323.8 km)</td>
+            <td>11.65 miles (18.75 km)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Texas to Cabo San Lucas Picacho Mountain</td>
+            <td>760 miles (1,220 km)</td>
+            <td>35,000 feet (11,000 m)</td>
+            <td>6,507 feet (1,983 m)</td>
+            <td>235.6 miles (379.2 km)</td>
+            <td>34.5 miles (182,000 ft)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Blackpool to Isle of Mann</td>
+            <td>62 miles (100 km)</td>
+            <td>50 feet (15 m)</td>
+            <td>2,037 feet (621 m)</td>
+            <td>8.6 miles (13.8 km)</td>
+            <td>1,897 miles (10,016,000 ft)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Rivington Rd to Isle of Mann</td>
+            <td>92 miles (148 km)</td>
+            <td>940 feet (290 m)</td>
+            <td>2,043 feet (623 m)</td>
+            <td>37.54 miles (60.41 km)</td>
+            <td>1,977.6 feet (602.8 m)</td>
+            <td>Y-axis</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Mirror Flash Observations</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Observation</th>
+            <th>Distance</th>
+            <th>Observer Height</th>
+            <th>Target Height</th>
+            <th>Globe Predicted Horizon Distance</th>
+            <th>Globe Predicted Hidden by Horizon</th>
+            <th>Relevant Axis Mismatch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Salton Sea Triangle Mirror Flash</td>
+            <td>8.1 miles (13.0 km)</td>
+            <td>4 feet (1.2 m)</td>
+            <td>4 feet (1.2 m)</td>
+            <td>2.51 miles (4.04 km)</td>
+            <td>20.8 feet (6.3 m)</td>
+            <td>Y-axis</td>
+    
+        </tr>
+        <tr>
+            <td>Rock Lake Manitoba (Frozen) Mirror Test</td>
+            <td>7.4 miles (11.9 km)</td>
+            <td>8.5 inches (220 mm)</td>
+            <td>1 foot (0.30 m)</td>
+            <td>1 mile (1.6 km)</td>
+            <td>27.1 feet (8.3 m)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+        <tr>
+            <td>Monterey Bay</td>
+            <td>13.8 miles (22.2 km)</td>
+            <td>5 feet (1.5 m)</td>
+            <td>2 feet (0.61 m)</td>
+            <td>2.74 miles (4.41 km)</td>
+            <td>67.3 feet (20.5 m)</td>
+            <td>Y-axis & Z-axis</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Laser Tests Observations</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Observation</th>
+            <th>Distance</th>
+            <th>Observer Height</th>
+            <th>Target Height</th>
+            <th>Globe Predicted Horizon Distance</th>
+            <th>Globe Predicted Hidden by Horizon</th>
+            <th>Relevant Axis Mismatch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Utah Lake</td>
+            <td>13.7 miles (22.0 km)</td>
+            <td>4.5 feet (1.4 m)</td>
+            <td>5.5 feet (1.7 m)</td>
+            <td>2.5 miles (4.0 km)</td>
+            <td>82 feet (25 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Laser curvature test Romania</td>
+            <td>15 kilometres (9.3 mi)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>2.2 kilometres (1.4 mi)</td>
+            <td>33.6 metres (110 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Okanagan Lake</td>
+            <td>16.4 miles (26.4 km)</td>
+            <td>4 feet (1.2 m)</td>
+            <td>0.5 feet (0.15 m)</td>
+            <td>0.86 miles (1.38 km)</td>
+            <td>161 feet (49 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Slocan Lake</td>
+            <td>10.4 miles (16.7 km)</td>
+            <td>0.5 feet (0.15 m)</td>
+            <td>0.5 feet (0.15 m)</td>
+            <td>0.86 miles (1.38 km)</td>
+            <td>60.6 feet (18.5 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>15 km Laser Test Mandurah</td>
+            <td>15 kilometres (9.3 mi)</td>
+            <td>2.5 metres (8.2 ft)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>3.5 kilometres (2.2 mi)</td>
+            <td>22.5 metres (74 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Laser Test Puget Sound</td>
+            <td>10 miles (16 km)</td>
+            <td>10 feet (3.0 m)</td>
+            <td>4 feet (1.2 m)</td>
+            <td>3.8 miles (6.1 km)</td>
+            <td>25 feet (7.6 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Laser Test Rock Lake Frozen</td>
+            <td>7.5 miles (12.1 km)</td>
+            <td>3.4 feet (1.0 m)</td>
+            <td>2.5 feet (0.76 m)</td>
+            <td>2.2 miles (3.5 km)</td>
+            <td>18.3 feet (5.6 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Pier2Pier Double Laser</td>
+            <td>15.3 kilometres (9.5 mi)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>3.7 kilometres (2.3 mi)</td>
+            <td>10.8 metres (35 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Salton Sea Laser</td>
+            <td>17.60 miles (28.32 km)</td>
+            <td>44 feet (13 m)</td>
+            <td>6 feet (1.8 m)</td>
+            <td>8.7 miles (14.0 km)</td>
+            <td>59.31 feet (18.08 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE  - Lake Balaton, Siofok - Measurement 1</td>
+            <td>12 kilometres (7.5 mi)</td>
+            <td>1.5 metres (4.9 ft)</td>
+            <td>1.6 metres (5.2 ft)</td>
+            <td>4.37 kilometres (2.72 mi)</td>
+            <td>4.56 metres (15.0 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake Balaton, Balatonvilagos - Measurement 2</td>
+            <td>15 kilometres (9.3 mi)</td>
+            <td>2.5 metres (8.2 ft)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>3.5 kilometres (2.2 mi)</td>
+            <td>3.53 metres (11.6 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake IJssel - Measurement 3 - April 8th 2018</td>
+            <td>21.26 kilometres (13.21 mi)</td>
+            <td>2.85 metres (9.4 ft)</td>
+            <td>1.1 metres (3.6 ft)</td>
+            <td>6.02 kilometres (3.74 mi)</td>
+            <td>18.7 metres (61 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake IJssel - Measurement 4 - 4/8 2018</td>
+            <td>28.68 kilometres (17.82 mi)</td>
+            <td>2.85 metres (9.4 ft)</td>
+            <td>0.85 metres (2.8 ft)</td>
+            <td>6.02 kilometres (3.74 mi)</td>
+            <td>40.2 metres (132 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake IJssel - Measurement 5 - 4/22 2018</td>
+            <td>18.73 kilometres (11.64 mi)</td>
+            <td>2.92 metres (9.6 ft)</td>
+            <td>0.85 metres (2.8 ft)</td>
+            <td>6.59 kilometres (4.09 mi)</td>
+            <td>12.52 metres (41.1 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake IJssel - Measurement 6 - 4/22 2018</td>
+            <td>40.14 kilometres (24.94 mi)</td>
+            <td>2.92 metres (9.6 ft)</td>
+            <td>1.5 metres (4.9 ft)</td>
+            <td>6.01 kilometres (3.73 mi)</td>
+            <td>90.94 metres (298.4 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>FECORE - Lake IJssel - Measurement 7 - 4/20 2018</td>
+            <td>40.14 kilometres (24.94 mi)</td>
+            <td>2.92 metres (9.6 ft)</td>
+            <td>1.5 metres (4.9 ft)</td>
+            <td>6.01 kilometres (3.73 mi)</td>
+            <td>90.94 metres (298.4 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Antelope Island to Great Salt Lake Marina</td>
+            <td>21.03 miles (33.84 km)</td>
+            <td>5 feet (1.5 m)</td>
+            <td>5 feet (1.5 m)</td>
+            <td>2.73 miles (4.39 km)</td>
+            <td>218 feet (66 m)</td>
+            <td>Y-axis</td>
+        </tr>
+        <tr>
+            <td>Sea of Galilee</td>
+            <td>18.5 kilometres (11.5 mi)</td>
+            <td>1 metre (3.3 ft)</td>
+            <td>0.12 metres (0.39 ft)</td>
+            <td>1.23 kilometres (0.76 mi)</td>
+            <td>17.38 metres (57.0 ft)</td>
+            <td>Y-axis</td>
+        </tr>
+    </tbody>
+</table>
