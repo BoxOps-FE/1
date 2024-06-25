@@ -154,7 +154,7 @@
             <h2>Distance to Horizon Calculator</h2>
             <form id="horizonForm">
                 <label for="height">Observer Height (in feet):</label><br>
-                <input type="number" id="height" name="height" required><br><br>
+                <input type="text" id="height" name="height" required><br><br>
                 <button type="submit">Calculate</button>
             </form>
             <p id="horizonResult"></p>
@@ -216,7 +216,8 @@
                 event.preventDefault(); // Prevent default form submission
 
                 // Retrieve height value
-                const height = parseFloat(document.getElementById('height').value);
+                const heightStr = document.getElementById('height').value;
+                const height = parseFloat(heightStr);
                 if (isNaN(height) || height <= 0) {
                     alert('Please enter a valid height.');
                     return;
