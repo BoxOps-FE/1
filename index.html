@@ -117,7 +117,7 @@
                 <p>Citation: Heath Carmody <a href="https://youtu.be/MVKmLpV5Ltc?si=e5AEO28gES6fQK_f">https://youtu.be/MVKmLpV5Ltc?si=e5AEO28gES6fQK_f</a></p>
                 <p>Data Point: 3 INCH observer height, 13.8 mile horizon, Horizon 2200% beyond globe 0.6 mile geometric limitation</p>
                 <img src="black_swan_Canada.webp" alt="black_swan_Canada.webp">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHBrejVla3F3OHVxNGk5Z2llcTF2ajRrNHFtcHI3dXpib3g5bnByaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h80jYD4ZGH6VAj6cO8/giphy-downsized-large.gif" alt="GIF Example">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHBrejVla3F3OHVxNGk5Z2llcTF2ajRrNHFtcHI3dXpib3g5bnByaSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/h80jYD4ZGH6VAj6cO8/giphy-downsized-large.gif" alt="GIF Example">
             </div>
 
             <!-- Link to Data Sheet Table Page -->
@@ -244,7 +244,16 @@
                 horizonResult.textContent = `Distance to Horizon: ${distance.toFixed(2)} miles`;
             });
 
-            // Function to update displayed data
+            // Retrieve saved form data from localStorage if available
+            const observationField = document.getElementById('observation');
+            const citationField = document.getElementById('citation');
+            const dataPointField = document.getElementById('dataPoint');
+
+            observationField.value = localStorage.getItem('observation') || '';
+            citationField.value = localStorage.getItem('citation') || '';
+            dataPointField.value = localStorage.getItem('dataPoint') || '';
+
+            // Save form data to localStorage on form submission
             const form = document.getElementById('dataForm');
             const dataList = document.getElementById('dataList');
 
@@ -252,11 +261,11 @@
                 event.preventDefault(); // Prevent default form submission
 
                 // Retrieve form values
-                const observation = document.getElementById('observation').value;
-                const citation = document.getElementById('citation').value;
-                const dataPoint = document.getElementById('dataPoint').value;
+                const observation = observationField.value;
+                const citation = citationField.value;
+                const dataPoint = dataPointField.value;
 
-                // Store form data in localStorage (optional, you can remove this if not needed)
+                // Store form data in localStorage
                 localStorage.setItem('observation', observation);
                 localStorage.setItem('citation', citation);
                 localStorage.setItem('dataPoint', dataPoint);
@@ -264,13 +273,14 @@
                 // Show a confirmation message to the user
                 alert('Form submitted successfully!');
 
-                // Clear form fields
-                form.reset();
-
                 // Update displayed data
                 updateDataDisplay(observation, citation, dataPoint);
+
+                // Clear form fields
+                form.reset();
             });
 
+            // Function to update the displayed data
             function updateDataDisplay(observation, citation, dataPoint) {
                 // Create a new list item for each submission
                 const listItem = document.createElement('li');
@@ -282,6 +292,17 @@
 
                 // Append the new list item to the list
                 dataList.appendChild(listItem);
+            }
+
+            // Load existing data from localStorage on page load
+            const storedData = {
+                observation: localStorage.getItem('observation'),
+                citation: localStorage.getItem('citation'),
+                dataPoint: localStorage.getItem('dataPoint')
+            };
+
+            if (storedData.observation || storedData.citation || storedData.dataPoint) {
+                updateDataDisplay(storedData.observation, storedData.citation, storedData.dataPoint);
             }
         });
     </script>
