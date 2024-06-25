@@ -48,6 +48,12 @@
             padding: 20px;
             margin-top: 40px;
         }
+        .horizon-calculator-section {
+            background-color: #ff69b4; /* hot pink */
+            color: black;
+            padding: 20px;
+            margin-top: 40px;
+        }
         footer {
             margin-top: 40px;
             font-size: 0.88em; /* Slightly increased */
@@ -143,6 +149,17 @@
             <ul id="dataList"></ul>
         </section>
         
+        <!-- Distance to Horizon Calculator Section -->
+        <section class="horizon-calculator-section">
+            <h2>Distance to Horizon Calculator</h2>
+            <form id="horizonForm">
+                <label for="height">Observer Height (in feet):</label><br>
+                <input type="number" id="height" name="height" required><br><br>
+                <button type="submit">Calculate</button>
+            </form>
+            <p id="horizonResult"></p>
+        </section>
+        
         <footer>
             <p>Made with <span class="plus-sign">+</span> and <span class="perpendicular-line"></span> by BoxOps</p>
         </footer>
@@ -190,6 +207,25 @@
                 // Append the new list item to the list
                 dataList.appendChild(listItem);
             }
+
+            // Distance to Horizon Calculator
+            const horizonForm = document.getElementById('horizonForm');
+            const horizonResult = document.getElementById('horizonResult');
+
+            horizonForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Retrieve height value
+                const height = parseFloat(document.getElementById('height').value);
+                if (isNaN(height) || height <= 0) {
+                    alert('Please enter a valid height.');
+                    return;
+                }
+
+                // Calculate distance to horizon
+                const distance = 1.22459 * Math.sqrt(height);
+                horizonResult.textContent = `Distance to Horizon: ${distance.toFixed(2)} miles`;
+            });
         });
     </script>
 </body>
